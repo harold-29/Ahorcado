@@ -1,0 +1,38 @@
+<!-- 
+  Harold Badilla
+
+  Práctica 8 JS
+
+  Ahorcado
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body onload="funcionGenerarPalabra(1);">
+    <div class="caja">
+      <h1>Juego del Ahorcado</h1>
+      
+      <input type="text" id="letra" />
+      <br>
+      <button id="verificar" onclick="funcionAhorcado();">Verificar</button>
+
+      <div id="contenedor">
+        <p id="palabra"></p>
+        <h2>Fallos</h2>
+        <p id="ahorcado"></p>
+        <h2>Letras Utilizadas</h2>
+        <p id="usadas"></p>
+      </div>
+    </div>
+
+    <script src="JS/script.js" type="text/javascript" async></script>
+  </body>
+</html>
